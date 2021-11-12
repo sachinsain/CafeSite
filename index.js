@@ -3,6 +3,7 @@ const fs=require('fs')
 const Port=process.env.PORT||3000;
 const app=express();
 const Home=fs.readFileSync('./view/index.html')
+app.use('/static',express.static('static'));
 //routes
 app.get('/',(req,res)=>{
     res.setHeader('Content-Type','text/html');

@@ -1,0 +1,239 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+} 
+
+/* css variables */
+:root {
+    --navbar-height: 50px;
+}
+
+/* navigation bar */
+#navbar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    
+    
+}
+.container{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+}
+
+/* navigation and logo */
+#logo {
+    margin: 20px 45px;
+}
+
+#logo img {
+    border: 2px solid black;
+    height: 130px;
+    padding: 2px 3px;
+
+}
+
+#navbar ul {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(175, 166, 166);
+    top: 0px;
+    left: 0px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(138, 143, 143);
+    background-color: rgb(15, 30, 58);
+    cursor: pointer;
+
+}
+
+#Home {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 2px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home::before {
+    content: "";
+    position: absolute;
+    background: url('../Images/bag\ .jpg');
+    height: 110%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 15;
+}
+
+#Home h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#Home p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 2px;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid black;
+    padding: 50px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#client-section {
+    height: 344px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../Images/bag\ .jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 52%;
+    z-index: -1;
+    opacity: 1.0;
+}
+
+#Clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#Clients img {
+    height: 144px;
+    padding: 15px;
+
+}
+
+#contect {
+    position: relative;
+color: rgb(17, 1, 1);
+
+}
+
+#contect::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 7;
+    background: url('../Images/contect\ img.jpg') no-repeat center center/cover;
+
+}
+
+#contect-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contect-box input,
+#contect-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.2rem;
+
+}
+#contect-box form{
+    
+}
+#contect-box label{
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 12px;
+
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn {
+    padding: 2px 6px;
+    border: 2px solid black;
+    background-color: rgb(96, 117, 71);
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+.center {
+    text-align: center;
+ } 
